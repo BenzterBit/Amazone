@@ -23,6 +23,8 @@
     border: 1px solid;
     margin-top: 10px;
     color:#111;
+    height: 30px;
+    border-radius: 2px;
 }
 .product_price{
     margin-top: 5px;
