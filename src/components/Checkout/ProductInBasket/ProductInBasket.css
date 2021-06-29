@@ -1,0 +1,38 @@
+.productInBasket{
+    display: flex;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.productInBasket_info{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    justify-content: space-between;
+}
+.productInBasket_info > button{
+    background: #EF6B8A;
+    border: 1px solid;
+    margin-top: 10px;
+    color:#111;
+    height: 30px;
+    border-radius: 2px;
+}
+
+.productInBasket_image{
+    object-fit: contain;
+    width: 180px;
+    height: 180px;
+}
+
+
+.productInBasket_rating{
+    display: flex;
+
+}
+
+.productInBasket_title{
+    font-size: 17px;
+    font-weight: 800;
+}

@@ -1,8 +1,23 @@
 import React from 'react'
 import './Product.css'
 import GetStars from './GetStars'
+import { useStateValue } from '../StateProvider/StateProvider'
+import { ACTIONS } from '../StateProvider/reducer'
 
-function Product({title,image,price,rating}) {
+function Product({id,title,image,price,rating}) {
+    const [{basket},dispatch] = useStateValue()
+    console.log(basket)
+    function addToBasket(){
+        dispatch({ type:ACTIONS.ADD_TO_BASKET , 
+            payload: {
+                id: id,
+                title:title,
+                image:image,
+                price:price,
+                rating:rating
+            }
+        })
+    }
     return (
         <div className='product'>
             <div className='product_info'>
@@ -16,7 +31,7 @@ function Product({title,image,price,rating}) {
                 </div>
             </div>
                 <img alt='' src={image}/>
-                <button>Add to Basket</button>
+                <button onClick={addToBasket}>Add to Basket</button>
             
             
         </div>
