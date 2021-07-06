@@ -6,12 +6,12 @@ import { Link } from 'react-router-dom';
 import { useStateValue } from '../StateProvider/StateProvider';
 
 function Header() {
-    const [{basket},dispatch] = useStateValue()
+    const [{basket}] = useStateValue()
 
     return (
         <div className='header'>
             <Link to='/'>
-                <img className='header_logo' src="https://i.imgur.com/u68vO4W.png" />
+                <img alt ='' className='header_logo' src="https://i.imgur.com/u68vO4W.png" />
             </Link>
 
             <div className="header_search">
@@ -22,10 +22,12 @@ function Header() {
             </div>
 
             <div className="header_nav">
-                <div className="header_option">
-                    <span className="header_optionLineOne">Hello</span>
-                    <span className="header_optionLineTwo">Sign in</span>
-                </div>
+                <Link to='/login'>
+                    <div className="header_option">
+                        <span className="header_optionLineOne">Hello</span>
+                        <span className="header_optionLineTwo">Sign in</span>
+                    </div>
+                </Link>
                 <div className="header_option">
                     <span className="header_optionLineOne">Returns</span>
                     <span className="header_optionLineTwo">& Orders</span>
