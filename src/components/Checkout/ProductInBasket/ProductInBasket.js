@@ -5,7 +5,7 @@ import { useStateValue } from '../../StateProvider/StateProvider'
 import './ProductInBasket.css'
 
 function ProductInBasket({id, image, title, price, rating}) {
-    const [{basket},dispatch] = useStateValue()
+    const [,dispatch] = useStateValue()
 
     const removeFromBasket=() =>{
         dispatch({type:ACTIONS.REMOVE_FROM_BASKET , payload:{id}})

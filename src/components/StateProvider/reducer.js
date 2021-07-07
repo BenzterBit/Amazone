@@ -1,10 +1,12 @@
 export const initialState = {
-    basket: []
+    basket: [],
+    user : null,
 }
 
 export const ACTIONS = {
     ADD_TO_BASKET: 'ADD_TO_BASKET',
-    REMOVE_FROM_BASKET:'REMOVE_FROM_BASKET'
+    REMOVE_FROM_BASKET:'REMOVE_FROM_BASKET',
+    SET_USER:'SET_USER',
 }
 
 export const reducer = (state,action) => {
@@ -25,6 +27,11 @@ export const reducer = (state,action) => {
              return {
                  ...state, basket: newBasket
              }
+        case ACTIONS.SET_USER:
+            return {
+                ...state, 
+                user: action.payload
+            }
             
                 
         default:

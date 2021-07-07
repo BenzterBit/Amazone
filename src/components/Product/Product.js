@@ -5,7 +5,7 @@ import { useStateValue } from '../StateProvider/StateProvider'
 import { ACTIONS } from '../StateProvider/reducer'
 
 function Product({id,title,image,price,rating}) {
-    const [{basket},dispatch] = useStateValue()
+    const [,dispatch] = useStateValue()
     function addToBasket(){
         dispatch({ type:ACTIONS.ADD_TO_BASKET , 
             payload: {
