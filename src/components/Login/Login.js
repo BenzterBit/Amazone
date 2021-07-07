@@ -19,17 +19,7 @@ function Login() {
 
     }
 
-    const register =(e)=>{
-        e.preventDefault();
-        auth.createUserWithEmailAndPassword(email,password)
-        .then(auth => {
-            if(auth){
-                history.push('/')
-            }
-
-        }).catch(err => alert(err))
-
-    }
+    
     return (
         <div className='login'>
             <Link to='/'>
@@ -45,7 +35,10 @@ function Login() {
                     <input type='password' value={password} onChange= {e=> setPassword(e.target.value)}/>
                     <button type='submit' className='login_signInButton' onClick={signin}>Login</button>
                 </form>
-                <button className='login_registerButton' onClick={register}>Create an Account</button>
+                <Link to='/signup'>
+                    <button className='login_registerButton'>Create an Account</button>
+                </Link>
+                
             </div>
 
             
