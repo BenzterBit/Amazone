@@ -6,11 +6,7 @@ function Home() {
     return (
         <div className='home'>
             <div className='home_container'>
-<<<<<<< HEAD
                 <img className='home_image' alt=''
-=======
-                <img alt='' className='home_image'
->>>>>>> ed3e1ab14429c116050ea1aa126ddb9dc73146d7
                  src='https://images-eu.ssl-images-amazon.com/images/G/31/AmazonVideo/2021/X-site/Multititle/June/M21/Hin/1500x600_Hero-Tall_JPN._CB664880312_.jpg'/>
             </div>
             <div className='home_row'>

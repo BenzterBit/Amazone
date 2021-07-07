@@ -5,11 +5,7 @@ import { useStateValue } from '../StateProvider/StateProvider'
 import { ACTIONS } from '../StateProvider/reducer'
 
 function Product({id,title,image,price,rating}) {
-<<<<<<< HEAD
     const [,dispatch] = useStateValue()
-=======
-    const [dispatch] = useStateValue()
->>>>>>> ed3e1ab14429c116050ea1aa126ddb9dc73146d7
     function addToBasket(){
         dispatch({ type:ACTIONS.ADD_TO_BASKET , 
             payload: {
