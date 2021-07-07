@@ -8,7 +8,11 @@
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+<<<<<<< HEAD
     "firebase": "^8.6.8",
+=======
+    "firebase": "^8.7.0",
+>>>>>>> ed3e1ab14429c116050ea1aa126ddb9dc73146d7
     "react": "^17.0.2",
     "react-currency-format": "^1.0.0",
     "react-dom": "^17.0.2",

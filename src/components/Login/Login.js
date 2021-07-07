@@ -13,7 +13,10 @@ function Login() {
         auth.signInWithEmailAndPassword(email,password)
         .then(auth => {
             if(auth){
+<<<<<<< HEAD
                 console.log(auth)
+=======
+>>>>>>> ed3e1ab14429c116050ea1aa126ddb9dc73146d7
                 history.push('/')
             }
         }).catch(err => alert(err))
